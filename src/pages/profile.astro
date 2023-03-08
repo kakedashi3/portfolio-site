@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Projects">
+  <main>
+    <h1>My Projects</h1>
+    <p>Here are some of my latest projects:</p>
+    <ul>
+      <li>
+        <a href="#">Project 1</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue eget risus faucibus lacinia sit amet in elit.</p>
+      </li>
+      <li>
+        <a href="#">Project 2</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue eget risus faucibus lacinia sit amet in elit.</p>
+      </li>
+      <li>
+        <a href="#">Project 3</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue eget risus faucibus lacinia sit amet in elit.</p>
+      </li>
+    </ul>
+    <Card
+      href="https://kakedashi.xyz"
+      title="Back to About Me"
+      body="Go back to my about me page."
+    />
+  </main>
+</Layout>
