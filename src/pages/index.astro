@@ -6,10 +6,9 @@ import Card from '../components/Card.astro';
 <Layout title="Welcome to Kakedashi-Portfolio.">
 	<main>
 		<h1>Welcome to <span class="text-gradient">Kakedashi-Portfolio</span></h1>
-		<!-- <p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p> -->
+		<p class="instructions">
+			1
+		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="/profile"
@@ -26,16 +25,17 @@ import Card from '../components/Card.astro';
 				title="Twitter🐤"
 				body="@kakedashi_tarou"
 			/>
-			<Card
+			<!-- <Card
 				href="https://github.com/kakedashi3/"
 				title="Github🦑"
 				body="@kakedashi3"
-			/>
-			<!-- <Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
 			/> -->
+			<Card
+				href="https://chirubinu.substack.com?sd=pf"
+				title="Novel🖊"
+				body="Fiction"
+			/>
+			<iframe src="https://chirubinu.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
 		</ul>
 	</main>
 </Layout>
@@ -62,7 +62,7 @@ import Card from '../components/Card.astro';
 		line-height: 1.6;
 		margin: 1rem 0;
 		border: 1px solid rgba(var(--accent), 25%);
-		background-color: rgb(231, 202, 140);
+		background-color: rgb(255, 255, 255);
 		padding: 1rem;
 		border-radius: 0.4rem;
 	}
