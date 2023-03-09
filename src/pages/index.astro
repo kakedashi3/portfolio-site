@@ -6,14 +6,19 @@ import Card from '../components/Card.astro';
 <Layout title="Welcome to Kakedashi-Portfolio.">
 	<main>
 		<h1>Welcome to <span class="text-gradient">Kakedashi-Portfolio</span></h1>
-		<p class="instructions">
+		<!-- <p class="instructions">
 			1
-		</p>
+		</p> -->
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="/profile"
 				title="Profile😎"
 				body="Check out my profile."
+			/>
+			<Card
+				href="https://chirubinu.substack.com?sd=pf"
+				title="Novel🖊"
+				body="Fiction"
 			/>
 			<Card
 				href=""
@@ -25,17 +30,12 @@ import Card from '../components/Card.astro';
 				title="Twitter🐤"
 				body="@kakedashi_tarou"
 			/>
-			<!-- <Card
+			<Card
 				href="https://github.com/kakedashi3/"
 				title="Github🦑"
 				body="@kakedashi3"
-			/> -->
-			<Card
-				href="https://chirubinu.substack.com?sd=pf"
-				title="Novel🖊"
-				body="Fiction"
 			/>
-			<iframe src="https://chirubinu.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+			
 		</ul>
 	</main>
 </Layout>
