@@ -4,31 +4,40 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="My Profile">
-  <main class="container">
-    <h1 class="text-3xl font-bold">My Profile</h1>
-    <p class="text-lg my-4">Hi! I'm Kakedashi.</p>
-    <ul class="space-y-4">
-      <li>
-        <a href="#" class="text-blue-500 font-medium">About as...</a>
-        <p class="text-gray-700 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae augue eget risus faucibus lacinia sit amet in elit.</p>
-      </li>
-    </ul>
-    <div class="mt-8">
-      <Card
-        href="https://kakedashi.xyz"
-        title="Back to About Me"
-        body="Go back to my about me page."
-      />
+  <main class="container flex justify-center">
+    <div class="content">
+      <h1 class="text-3xl font-bold">My Profile</h1>
+      <p class="text-lg my-4">Hi! I'm Kakedashi.</p>
+      <ul class="space-y-4">
+        <li>
+          <a href="#" class="text-blue-500 font-medium">About</a>
+          <p class="text-gray-700 mt-2">Hello! My name is kakedashi and I work in various roles in the creative world. I excel at drawing detailed and attractive pixel art and use this skill to create visually impressive works of art. In addition, I am also a front-end engineer, combining design and technology to create user-friendly and beautiful interfaces.<br><br>
+            My other passion is as a novelist. I take pleasure in weaving imaginative stories and delivering excitement and surprise to readers. In my work, I aim to blur the boundaries between the real and fictional worlds and create stories that stay in the mind.<br><br>
+            Through these three roles, I aim to contribute to the creative world and create work that impacts people's hearts and minds. I am passionate about any project and it is my pleasure to collaborate with you to create great results. Please feel free to reach out to me!</p>
+        </li>
+      </ul>
+      <div class="mt-8">
+        <Card
+          href="https://kakedashi.xyz"
+          title="Back to About Me"
+          body="Go back to my about me page."
+        />
+      </div>
     </div>
   </main>
 </Layout>
 
 
 <style>
-    main {
-        margin: auto;
+    .container {
+        display: flex;
+        justify-content: center;
         padding: 1.5rem;
+    }
+    
+    .content {
         max-width: 60ch;
     }
 </style>
+
 
