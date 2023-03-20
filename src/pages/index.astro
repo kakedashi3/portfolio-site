@@ -5,6 +5,10 @@ import Card from '../components/Card.astro';
 
 <Layout title="Welcome to Kakedashi-Portfolio.">
 	<main>
+		<div class="banner">
+			<img src="public/top.png" alt="Banner image" />
+			<div class="banner-title">On The Frog</div>
+		</div>
 		<h1>Welcome to <span class="text-gradient">Kakedashi-Portfolio</span></h1>
 		<!-- <p class="instructions">
 			1
@@ -82,5 +86,34 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
 		padding: 0;
+	}
+	.banner {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 56.25%; /* 16:9 aspect ratio */
+		overflow: hidden;
+	}
+	.banner img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.5;
+	}
+	.banner-title {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-size: 2rem;
+		font-weight: bold;
 	}
 </style>
