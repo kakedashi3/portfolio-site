@@ -8,13 +8,10 @@ import Card from '../components/Card.astro';
 
 		<div class="banner">
 			<img src="/top.png" alt="Banner image" />
-			<!-- <div class="banner-title">Kakedashi Portfolio</div> -->
 		</div>
 
 		<h1>Welcome to <span class="text-gradient">Kakedashi-Portfolio</span></h1>
-		<!-- <p class="instructions">
-			1
-		</p> -->
+	
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="/profile"
@@ -57,6 +54,7 @@ import Card from '../components/Card.astro';
 		font-size: 3rem;
 		font-weight: 800;
 		margin: 0;
+		margin-top: 100px;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -89,12 +87,15 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
 		padding: 0;
+		margin-top: 100px;
+		margin-bottom: 100px;
 	}
 	.banner {
 		position: relative;
 		width: 100%;
 		padding-top: 56.25%; /* 16:9 アスペクト比 */
 		overflow: hidden;
+		margin-bottom: 50px;
 	}
 	.banner img {
 		position: absolute;
